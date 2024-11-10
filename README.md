@@ -52,7 +52,7 @@ The repository provides you with the full source code to easily install and run 
   <img src="load.jpg" alt="loading" width="200" style="margin: 10px;">
   <img src="pre.jpg" alt="prediction" width="200" style="margin: 10px;">
   <img src="exit.jpg" alt="exit" width="200" style="margin: 10px;">
-     <img src="more.jpg" alt="more-predct" width="200" style="margin: 10px;">
+   
 </div>
 
 ## **Installation Instructions**
