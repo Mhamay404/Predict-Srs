@@ -48,10 +48,11 @@ The repository provides you with the full source code to easily install and run 
 
 ---
 <div style="text-align: center;">
-  <img src="image1.jpg" alt="Server 1 Image" width="200" style="margin: 10px;">
-  <img src="image2.jpg" alt="Server 2 Image" width="200" style="margin: 10px;">
-  <img src="image3.jpg" alt="Server 3 Image" width="200" style="margin: 10px;">
-  <img src="image4.jpg" alt="Additional Server Info" width="200" style="margin: 10px;">
+  <img src="main.jpg" alt="main" width="200" style="margin: 10px;">
+  <img src="load.jpg" alt="loading" width="200" style="margin: 10px;">
+  <img src="pre.jpg" alt="prediction" width="200" style="margin: 10px;">
+  <img src="exit.jpg" alt="exit" width="200" style="margin: 10px;">
+     <img src="more.jpg" alt="more-predct" width="200" style="margin: 10px;">
 </div>
 
 ## **Installation Instructions**
