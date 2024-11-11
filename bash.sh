@@ -40,11 +40,12 @@ displayOptions() {
     read server_option
 }
 
-# Generate period code
 getPeriodNumber() {
     local periodDate=$(date -u +"%Y%m%d")
-    local totalMinutes=$(date -u +"%H" | awk '{print $1 * 60}')
-    totalMinutes=$((totalMinutes + $(date -u +"%M")))
+    local hours=$(date -u +"%H")
+    local totalMinutes=$((hours * 60))  
+    local minutes=$(date -u +"%M")
+    totalMinutes=$((totalMinutes + minutes))  
     local periodNumber=$((10001 + totalMinutes))
     local periodCode="${periodDate}1000${periodNumber}"
     echo "$periodCode"
