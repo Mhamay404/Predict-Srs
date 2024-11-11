@@ -47,25 +47,25 @@ displayOptions() {
     read server_option
 }
 
-#preiod code
+#preiod code v2
 getPeriodNumber() {
- 
-    local utcYear=$(TZ='Asia/Kolkata' date +"%Y")
-    local utcMonth=$(TZ='Asia/Kolkata' date +"%m")
-    local utcDay=$(TZ='Asia/Kolkata' date +"%d")
-    local utcHours=$(TZ='Asia/Kolkata' date +"%H")
-    local utcMinutes=$(TZ='Asia/Kolkata' date +"%M")
+    
+    local periodDate=$(date -u +"%Y%m%d")
 
- 
-    local totalMinutes=$((utcHours * 60 + utcMinutes + 1))
+   
+    local totalMinutes=$(date -u +"%H" | awk '{print $1 * 60}') 
+    totalMinutes=$((totalMinutes + $(date -u +"%M")))            
 
-
+    
     local periodNumber=$((10001 + totalMinutes))
 
-    local periodCode="${utcYear}${utcMonth}${utcDay}${periodNumber}"
+   
+    local periodCode="${periodDate}1000${periodNumber}"
 
+ 
     echo "$periodCode"
 }
+
 
 
 
